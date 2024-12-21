@@ -22,7 +22,7 @@ The script will automatically check and install any missing dependencies.
 Make the installation script executable and run it:
 
 ```bash
-chmod +x install_dependencies.sh && ./install_dependencies.sh
+chmod +x install.sh && ./install.sh
 ```
 
 This will install necessary system packages and Python libraries.
