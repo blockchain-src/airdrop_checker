@@ -67,7 +67,7 @@ install_python_package() {
 }
 
 # Install necessary Python libraries
-python_packages=("web3" "cryptography" "requests")
+python_packages=("cryptography" "requests")
 
 for python_package in "${python_packages[@]}"; do
     install_python_package $python_package
