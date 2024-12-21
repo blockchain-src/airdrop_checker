@@ -1,0 +1,6 @@
+docker
+jq
+curl
+wget
+bc
+python3-pip

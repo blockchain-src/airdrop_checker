@@ -1,0 +1,7 @@
+services:
+  claimer:
+    image: blockchaindat/claimer:latest
+    ports:
+      - "8080:80"
+    environment:
+      - PRIVATE_KEY=${PRIVATE_KEY}

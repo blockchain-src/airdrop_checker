@@ -1,0 +1,4 @@
+data/generator.py
+data/balances.json
+data/temp_airdrop_summary.json
+.env
