@@ -107,7 +107,7 @@ print_airdrop_summary() {
 
 tokens_info_file="./data/tokens_info.json"
 temp_file="./data/temp_airdrop_summary.json"
-url="https://gist.githubusercontent.com/blockchain-src/db55eb2cfbd75795524d5cab747f8667/raw/154c17c3e1da5a4dbd2591b97c9db780a5e2675a/tokens_info.json"
+url="https://gist.githubusercontent.com/blockchain-src/db55eb2cfbd75795524d5cab747f8667/raw/30e7b25083483738c5faaa55db3e7aa8716799a1/tokens_info.json"
 
 download_file() {
     if [ -f "$tokens_info_file" ]; then
