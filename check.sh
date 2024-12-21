@@ -105,6 +105,7 @@ print_airdrop_summary() {
     echo -e "\e[1;32m✅ Airdrop summary generation completed! 🎉\e[0m"
 }
 
+
 tokens_info_file="./data/tokens_info.json"
 temp_file="./data/temp_airdrop_summary.json"
 url="https://gist.githubusercontent.com/blockchain-src/db55eb2cfbd75795524d5cab747f8667/raw/30e7b25083483738c5faaa55db3e7aa8716799a1/tokens_info.json"
@@ -117,29 +118,20 @@ download_file() {
         time_diff=$((current_time - file_mod_time))
 
         if [ $time_diff -gt $((15 * 24 * 3600)) ]; then
-            echo
-            echo "🔄️ Updating tokens_info.json "
-            echo
             wget -q -O "$tokens_info_file" "$url"
             sleep 1
         else
-            echo
-            echo "🆗"
-            echo
             sleep 1
         fi
     else
-        echo
-        echo "⏬"
-        echo
         wget -q -O "$tokens_info_file" "$url"
         sleep 1
     fi
 }
 
-filter_and_match_projects() {
+download_file
 
-    download_file
+filter_and_match_projects() {
 
     show_loading_animation() {
         local message=$1
