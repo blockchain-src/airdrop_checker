@@ -303,7 +303,7 @@ one_click_claim() {
 
 check_airdrop() {
     wallet_address="$1"
-    url="https://checkdrop.byzantine.fi/api/getDatas"
+    url="https://checkdrop.byzantine.fi/api/getDonnes"
 
     response=$(curl -s -G --data-urlencode "address=$wallet_address" -H "User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64)" "$url")
 
